@@ -441,6 +441,74 @@ definitions:
         type: "integer"
       use_class:
         type: "string"
+  Appraisal:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      object_id:
+        type: "integer"
+      parcel_id:
+        type: "integer"
+      land_value:
+        type: "integer"
+      building_value:
+        type: "integer"
+      created_at:
+        type: "string"
+        format: "date-time"
+      updated_at:
+        type: "string"
+        format: "date-time"
+  Version:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      item_type:
+        type: "string"
+      item_id:
+        type: "integer"
+      event:
+        type: "string"
+      whodunnit:
+        type: "string"
+      object:
+        type: "string"
+      created_at:
+        type: "string"
+        format: "date-time"
+  Ward:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      object_id:
+        type: "integer"
+      district_id:
+        type: "string"
+      district_name:
+        type: "string"
+      ward_name:
+        type: "string"
+      ward_id:
+        type: "string"
+      total_population:
+        type: "number"
+        format: "float"
+      white_population:
+        type: "number"
+        format: "float"
+      black_population:
+        type: "number"
+        format: "float"
+      hispanic_population:
+        type: "number"
+        format: "float"
+      council_person:
+        type: "string"
+      web_link:
+        type: "string"
 externalDocs:
   description: "Open Data API GitHub"
   url: "https://github.com/hacknakron/open-data-api"
